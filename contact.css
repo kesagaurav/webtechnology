@@ -1,0 +1,89 @@
+h1,p{
+    text-align: center;
+
+}
+ footer  ul{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+  footer li a {
+    display: block;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  h1.contact{
+text-align: center;
+  }
+
+  p{
+      text-align: center;
+  }
+  /* li{
+      float: left;
+  } */
+
+ header   li {
+    float: left;
+    border-right:1px solid #bbb;
+    text-align: center;
+  }
+  
+
+  header li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: black;
+  }
+  
+
+  header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  header li{
+      float: left;
+  } 
+
+  
+
+  div.gaurav{
+      text-align: center;
+      
+  }
+
+  input [type="submit"]{
+    background-color: blue;
+  }
+
+  
+
+  /* header  ul{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+  header li a {
+    display: block;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+  } */
