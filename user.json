@@ -1,0 +1,14 @@
+{
+    "id": 1,
+    "name": "berqueue chicken",
+    "email": "foo.bar@gmail.com",
+    "password": "123456",
+    "favorite foods": [
+        "berqueue chicken",
+        "chinken biryani",
+        "egg biryani"
+    ]
+
+
+
+}

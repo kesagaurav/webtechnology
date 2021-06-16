@@ -1,12 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe</title>
+    <link rel="stylesheet" href="recipe.css">
 </head>
+
 <body>
-    <h6>recipe works</h6>
+
+
+
+    <ul class="gaurav1">
+        <li style="float: right;"> <img src="sousmate-logo.png"></li>
+        <li><a href="home.html">Home</a></li>
+        <li> <a href="profile.html">profile</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="contact.html">contact</a></li>
+        <li><a href="#recipe">recipe</a></li>
+        <li><a href="login.html">login</a></li>
+    </ul>
+
+
+
+    <div id="content">
+
+        <section>
+            <h2>Recipes</h2>
+        </section>
+
+    </div>
+    <br/>
+    <br/>
+
+    <footer>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+
+            <li><a href="About.html">About</a></li>
+            <li><a href="#recipe">Recipe</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+            <p>&copy;2021</p>
+        </ul>
+    </footer>
+    <div id="timerWrapper">Time Remaining: <span id="timer"></span>
+        <div id="timerName"></div>
+    </div>
+    <script src="recipe.js"></script>
+    <script>
+        var recipe = [{
+            id: 1,
+            name: 'barbeque chicken',
+            caterogy: 'chicken',
+            time: 10,
+
+            prepTime: 20,
+            cooktime: 35,
+            instructions: [
+                'make an recipe',
+                'this is the second istruction',
+                'this is the third instruction'
+            ],
+            ingredients: [
+                "2 quarts of water",
+                "chicken peices",
+                "masala",
+                "greenchilles",
+                "salt",
+            ]
+        }, {
+            id: 2,
+            name: 'hyderabadi biryani',
+            caterogy: 'chicken',
+            time: 15,
+
+            prepTime: 30,
+            cooktime: 15,
+            instructions: [
+                'maximum type of instruction'
+            ],
+            ingredients: [
+                "chicken peices",
+                "masala",
+                "greenchilles",
+                "2 quarts water",
+                "1 cup sugar",
+                "1sp salt",
+            ]
+        }];
+
+        var val = JSON.stringify(recipe);
+        localStorage.setItem("RecipeList", val);
+    </script>
 </body>
+
 </html>

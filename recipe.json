@@ -1,0 +1,16 @@
+{
+    "id": 1,
+    "name": "berqueue chicken",
+    "synopis": "the recipe is very tasty",
+    "instructions": "the mix is very good",
+    "preptime": "12:00",
+    "cooktime": "10:00",
+    "author": "gaurav",
+    "yeild": "4 sservings",
+    "ingredients": [
+        "1 mix ture of sugar",
+        "2 cusp of water",
+        "3 2 cups of salts",
+        "4 chicnke peices"
+    ]
+}

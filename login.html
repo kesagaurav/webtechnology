@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login details</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" media="(max-width:1200px)">
+    <link rel="stylesheet" media="(max-width:1000px)">
+    <link rel="stylesheet" media="(max-width:800px)">
+    <link rel="stylesheet" media="(max-width:375px)">
+    <script src="login.js"></script>
+
+
+</head>
+
+<body>
+    <div class="div1">
+        <ul>
+            <li style="float: right;"> <img src="sousmate-logo.png"></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="profile.html">profile</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="recipe.html">recipe</a></li>
+            <li><a href="#login">login</a></li>
+        </ul>
+    </div>
+    <h1 class="h1">
+        <legend> Here are the login information details please fill the login information</legend>
+    </h1>
+    <div class="login">
+        <form action="profile.html">
+            <h1>Login</h1>
+            username :<input id="gaurav2" type="text" placeholder="enter your name"><br/><br/> password : <input id="gaurav" type="password" placeholder="enter your password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*])"><br/><br/>
+            <button class="btn" onclick="Validate();">SUBMIT</button>
+
+    </div>
+    <div id="message">
+        <h3>A password must contain the following</h3>
+        <p id="letter" class="invalid">A lowercase</p>
+        <p id="number" class="invalid">A number</p>
+        <p id="capital" class="invalid">A uppercase</p>
+        <p id="length" class="invalid">A minimum of 8 characters</p>
+    </div>
+    </form>
+    <footer>
+        <div class="row">
+            <div class="column">
+                <div class="about sousmate">
+                    <h4>About sousmate</h4>
+
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="recipe.html">Recipe</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+
+                        <p>&copy;2021</p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="login.js"></script>
+
+    <script>
+        var users = [{
+            "name": "gaurav",
+            "password": "123456"
+
+        }];
+
+        var val = JSON.stringify(users);
+        localStorage.setItem("myUser", val);
+        // window.location.href = "profile.html";
+    </script>
+
+    <!-- <script src="users.js"></script> -->
+    <!-- <script src="isLoggedin.js"></script>
+    <script src="jquery-2.1.4.min.js"></script> -->
+
+</body>
+
+</html>

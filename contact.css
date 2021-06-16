@@ -1,9 +1,10 @@
-h1,p{
+h1,
+p {
     text-align: center;
-
 }
- footer  ul{
-    list-style-type:none;
+
+footer ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
     width: 200px;
@@ -11,79 +12,104 @@ h1,p{
     text-align: center;
 }
 
-  footer li a {
+footer li a {
     display: block;
     color: black;
     padding: 14px 16px;
     text-decoration: none;
     text-align: center;
-  }
+}
 
-  h1.contact{
-text-align: center;
-  }
-
-  p{
-      text-align: center;
-  }
-  /* li{
-      float: left;
-  } */
-
- header   li {
-    float: left;
-    border-right:1px solid #bbb;
+h1.contact {
     text-align: center;
-  }
-  
+}
 
-  header li a {
+p {
+    text-align: center;
+}
+
+header li {
+    float: left;
+    border-right: 1px solid #bbb;
+    text-align: center;
+}
+
+header li a {
     display: block;
     color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: black;
-  }
-  
+}
 
-  header ul {
+header ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     text-align: center;
-  }
+}
 
-  header li{
-      float: left;
-  } 
+header li {
+    float: left;
+}
 
-  
+div.gaurav {
+    text-align: center;
+    border: 5px solid red;
+    background-color: orangered;
+    border-radius: 15px;
+    border-width: 50%;
+    position: relative;
+}
 
-  div.gaurav{
-      text-align: center;
-      
-  }
-
-  input [type="submit"]{
-    background-color: blue;
-  }
-
-  
-
-  /* header  ul{
-    list-style-type:none;
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
+input[type=text],
+input[type=email] {
+    border: 1px solid gold;
+    background-color: gold;
+    border-radius: 5px;
+    position: relative;
+    width: 50%;
     text-align: center;
 }
 
-  header li a {
+input [type=submit] {
+    position: relative;
+    border: 1px solid blue;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+    padding: 10px 10px;
+    background-color: blue;
+    width: 50%;
+    margin: 25px;
+    transition: width 4s;
+    transition-duration: 3s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+}
+
+div ul {
+    list-style-type: none;
+    margin: 10px 10px;
+    padding: 20px 20px;
+    overflow: hidden;
+    background-color: yellowgreen;
+}
+
+div li {
+    float: left;
+    border-right: 1px solid blue;
+}
+
+div li a {
     display: block;
-    color: black;
-    padding: 14px 16px;
-    text-decoration: none;
+    color: white;
     text-align: center;
-  } */
+    padding: 14px 16px;
+    text-decoration: blue;
+}
+
+div li:first-child {
+    border-right: none;
+}

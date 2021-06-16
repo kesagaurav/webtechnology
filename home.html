@@ -1,43 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" media="(max-width:1200px)">
+    <link rel="stylesheet" media="(max-width:1000px)">
+    <link rel="stylesheet" media="(max-width:800px)">
+    <link rel="stylesheet" media="(max-width:375px)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src="script.js"></script>
 </head>
+
 <body>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="About.html">About</a></li>
-        <li><a href="contact.html">contact</a></li>
-        <li><a href="recipe.html">recipe</a></li>
-    </ul>
+
+    <div class="div1">
+        <div ng-app="app">
+            <ul>
+                <li style="float: right;"> <img src="sousmate-logo.png"></li>
+
+                <li><a href="#/home">Home</a></li>
+                <!--<li> <a href="profile.html">profile</a></li>-->
+                <li><a href="#/About">About</a></li>
+                <!-- <li><a href="contact.html">contact</a></li>
+            <li><a href="recipe.html">recipe</a></li>
+            <li><a href="login.html">login</a></li> -->
+            </ul>
+        </div>
+    </div>
+    <div ng-view></div>
+
+    <br/>
     <div class="container">
-    <img  class="chicken" src="chicken.jpg" width="2000" height="2000" ><br/>
-    <!-- <p class="bottom"> Barbeque chicken  </p> -->
-    <div class="centered"> <h2>
-        <span>
+        <img class="chicken" src="chicken.jpg" width="2000" height="2000"><br/>
+        <div class="centered">
+            <h2>
+                <span>
             Barbeque <br/>
             Chicken
         </span>
-    </h2>
-    <h2> this is the recipe which will be very tasty</h2>
-    <a href="recipe.html">
-        <span>
+            </h2>
+            <h2> this is the recipe which will be very tasty</h2>
+            <a href="recipe.html">
+                <span>
             
         <button class="btn">
             ADD RECIPE
         </button>
            
         </span>
-    </a>
-  
-</div>
-        
-    </div> 
- 
+            </a>
+
+        </div>
+
+    </div>
+    <br/>
+    <br/>
+    <div id="gaurav">
+        <img src="kitchen5.jpg" width="1500" height="1500">
+
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+    <section id="subscription">
+        <h1><span>Get New</span><br/>Recipes Daily</h1>
+        <h2>Get new recipes sent directly to your email.</h2>
+        <form class="inline-form">
+            <legend>Type in your email to signup for our mailing list!</legend>
+            <input class="input" type="email" value="" placeholder="Email address" />
+            <button id="" class="button orange">Subscribe Today!</button>
+        </form>
+        <img id="tomatoes" src="tomato.jpg">
+    </section>
+    <br/>
+    <br/>
+
+
+
+    <!-- <div>
+        <img src="recipeplate.jpg" width="2000">
+        <button>
+        <a href="recipe.html">  see our recipes  </a> 
+       
+        </button>
+    </div> -->
+
+    <div class="container1">
+        <img src="recipeplate.jpg" width="2000">
+        <div class="centered1">
+
+        </div>
+
+    </div>
+
+
+
+
     <h1>THE RECIPE YOU WANT TO TASTE</h1>
     <div class="row">
         <div class="column">
@@ -60,14 +126,35 @@
             <p><span>And for us cooking is the half way around where as how to keep storage we will tell to you</span></p>
         </div>
     </div>
+
+    <div ng-view></div>
+
     <footer>
-        <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="About.html">About</a></li>
-        <li><a href="recipe.html">Recipe</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <p>&copy;2021</p>
-    </ul>
+        <div class="row">
+            <div class="column">
+                <div class="about sousmate">
+                    <h4>About sousmate</h4>
+
+
+
+                    <ul>
+                        <li><a href="home">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="recipe.html">Recipe</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+
+                        <p>&copy;2021</p>
+                    </ul>
+                    <ul>
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
     </footer>
+
 </body>
+
 </html>

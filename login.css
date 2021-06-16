@@ -1,0 +1,165 @@
+#message {
+    display: none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+#message p {
+    padding: 10px 35px;
+    font-size: 18px;
+}
+
+
+/* Add a green text color and a checkmark when the requirements are right */
+
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+}
+
+
+/* Add a red text color and an "x" when the requirements are wrong */
+
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+}
+
+.login {
+    text-align: center;
+    background-color: blueviolet;
+    border-radius: 15px;
+    border: 15px solid blueviolet;
+    border-width: 5px;
+}
+
+input[type=text],
+input[type=password] {
+    border-radius: 5px;
+    padding: 5px 10px;
+    position: relative;
+    margin: 0 8px;
+    border: 1px solid yellow;
+    width: 50%;
+    background-color: beige;
+}
+
+.h1 {
+    text-align: center;
+    background-color: aqua;
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    font-style: italic;
+    margin: 10px 10px;
+}
+
+.div1 ul {
+    list-style-type: none;
+    margin: 10px 10px;
+    padding: 20px 20px;
+    overflow: hidden;
+    background-color: yellowgreen;
+}
+
+.div1 li {
+    float: left;
+    border-right: 1px solid blue;
+}
+
+.div1 li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: blue;
+}
+
+.div1 li:first-child {
+    border-right: none;
+}
+
+body {
+    background-color: greenyellow;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+footer li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+footer li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.btn {
+    position: relative;
+    border: 1px solid blue;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+    padding: 10px 10px;
+    background-color: blue;
+    width: 50%;
+    margin: 25px;
+    transition: width 4s;
+    transition-duration: 3s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+}
+
+.btn:hover {
+    background-color: yellow;
+    width: 50%;
+    border-radius: 14px;
+    font-weight: 100;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
